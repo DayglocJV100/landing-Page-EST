@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7e57c2">
+  <meta name="description" content="Educação, inclusão e tecnologia para todos. Conheça a Escola Sementes da Transformação.">
+  <meta name="keywords" content="educação social, escola solidária, alfabetização infantil, inclusão social, escola comunitária, Aparecida de Goiânia">
+  <title>Escola Sementes da Transformação</title>
+  <style>
+    :root {
+      --cor-fundo: #f3e5f5;
+      --cor-destaque: #7e57c2;
+      --cor-texto: #4a148c;
+      --cor-hover: #9575cd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('img/fundoroxo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--cor-texto);
+}
+
+    html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: calc(50vh - 100px); /* centraliza a seção visualmente */
+}
+
+
+
+  nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--cor-hover);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  flex-wrap: wrap;
+}
+
+nav .logo-nav {
+  height: 45px;
+  width: auto;
+}
+
+nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  flex: 1;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  background-color: white;
+  color: var(--cor-hover);
+}
+
+    header {
+      background-image: url('img/fundo .png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* escurece imagem de fundo */
+      z-index: 1;
+    }
+
+    header div {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(126, 87, 194, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    header img {
+      width: 20vw;
+      max-width: 200px;
+      min-width: 120px;
+      margin-bottom: 20px;
+    }
+
+     .section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff; /* branco sólido */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  .section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
+    .section h2, .section h3 {
+      color: var(--cor-destaque);
+    }
+
+
+   footer {
+  background-color: var(--cor-destaque);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+/* Estilo para os links do footer */
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+/* Efeito de elevação no hover */
+footer a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+footer a {
+  cursor: pointer;
+}
+
+
+    @media (max-width: 768px) {
+      nav a {
+        margin: 5px 6px;
+        font-size: 0.95rem;
+      }
+
+      header {
+        padding: 60px 10px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  header {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  header div {
+    padding: 30px 20px;
+  }
+
+  header img {
+    width: 50vw;
+    max-width: 160px;
+  }
+
+  .section {
+    margin: 40px 20px;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .section h2, .section h3 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+
+}
+
+  </style>
+</head>
+<body>
+
+ <nav>
+  <img src="img/logo.png" alt="Logo" class="logo-nav">
+  <div class="nav-links">
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#missao">Missão</a>
+    <a href="#visao">Visão</a>
+    <a href="#valores">Valores</a>
+    <a href="#publico">Público-Alvo</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#sonho">Nosso Sonho</a>
+    <a href="#apoio">Como Apoiar</a>
+    <a href="#contato">Contato</a>
+  </div>
+</nav>
+
+
+  <header>
+    <div>
+      <img src="img/logo.png" alt="Logo da Escola Sementes da Transformação">
+      <h1>Escola Sementes da Transformação</h1>
+      <p>Educação, inclusão e tecnologia para todos</p>
+    </div>
+  </header>
+  
+  <section class="section" id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>A Associação Bem Viver Fazendo Transformação é uma organização sem fins lucrativos, nascida do coração da comunidade, idealizada por mães, pais, educadores e lideranças dos Setores Terra do Sol e Continental, em Aparecida de Goiânia/GO.</p>
+    <p>Nosso objetivo é romper com o ciclo de exclusão social através da educação, da solidariedade e da valorização do ser humano. Atuamos diretamente com crianças, adolescentes, jovens e adultos em situação de vulnerabilidade, promovendo acesso à alfabetização, alimentação, vestuário, cultura e cidadania.</p>
+  </section>
+
+  <section class="section" id="missao">
+    <h2>Nossa Missão</h2>
+    <p>Oferecer, com amor e compromisso, educação de base, acolhimento social e estímulo à cidadania ativa, promovendo o desenvolvimento humano e comunitário.</p>
+  </section>
+
+  <section class="section" id="visao">
+    <h2>Nossa Visão</h2>
+    <p>Ser referência em transformação social nas periferias urbanas, plantando sementes de dignidade, conhecimento e oportunidade.</p>
+  </section>
+
+  <section class="section" id="valores">
+    <h2>Nossos Valores</h2>
+    <ul>
+      <li>Respeito à dignidade humana</li>
+      <li>Amor ao próximo</li>
+      <li>Educação libertadora</li>
+      <li>Transparência nas ações</li>
+      <li>Participação comunitária</li>
+      <li>Solidariedade e inclusão</li>
+    </ul>
+  </section>
+
+  <section class="section" id="publico">
+    <h2>Público-Alvo</h2>
+    <p>Nosso trabalho atende a comunidade como um todo, com foco especial em:</p>
+    <ul>
+      <li><strong>Crianças:</strong> alfabetização, reforço escolar, alimentos, roupas e acolhimento.</li>
+      <li><strong>Jovens e adolescentes:</strong> educação, alimentação, socialização e cultura.</li>
+      <li><strong>Adultos:</strong> alfabetização (EJA), apoio à conclusão dos estudos, doações e integração cidadã.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="projetos">
+    <h2>Principais Projetos</h2>
+    <h3>1. Educação – Escola Sementes da Transformação</h3>
+    <ul>
+      <li>Alfabetização Infantil</li>
+      <li>EJA (Educação de Jovens e Adultos)</li>
+    </ul>
+    <blockquote>“Aprender a ler é mais do que decifrar letras. É descobrir que a vida tem possibilidades.”</blockquote>
+    <h3>2. Alimentação – Solidariedade que Alimenta</h3>
+    <ul>
+      <li>Coleta de alimentos não perecíveis</li>
+      <li>Campanhas financeiras</li>
+      <li>Distribuição a famílias cadastradas</li>
+    </ul>
+    <h3>3. Campanha do Agasalho – Acolher é Aquecer</h3>
+    <ul>
+      <li>Arrecadação de roupas, cobertores e calçados</li>
+      <li>Captação de recursos</li>
+    </ul>
+    <h3>4. Socialização, Arte e Cultura</h3>
+    <ul>
+      <li>Oficinas de artesanato</li>
+      <li>Projetos culturais: teatro, poesia, música</li>
+      <li>Rodas de conversa e autoestima</li>
+    </ul>
+  </section>
+
+  <section class="section" id="sonho">
+    <h2>Nosso Sonho Estruturante</h2>
+    <p>Almejamos construir nossa própria sala de aula, com estrutura adequada para ampliar e qualificar ainda mais o atendimento educacional prestado à comunidade.</p>
+  </section>
+
+  <section class="section" id="apoio">
+    <h2>Como Você Pode Apoiar</h2>
+    <ul>
+      <li>Doando alimentos, agasalhos ou materiais escolares</li>
+      <li>Contribuindo com qualquer valor via PIX ou transferência bancária</li>
+      <li>Divulgando nosso trabalho</li>
+      <li>Atuando como voluntário(a)</li>
+    </ul>
+  </section>
+
+<footer id="contato">
+  <p><strong>Endereço:</strong> Rua Alameda Raio do Sol, Qd. 25, Chácara 05 – Setor Terra do Sol – Aparecida de Goiânia/GO</p>
+  <p><strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/5562992119064" target="_blank">(62) 99211-9064</a></p>
+  <p><strong>E-mail:</strong> <a href="mailto:motanice13@gmail.com">motanice13@gmail.com</a></p>
+</footer>
+
+
+</body>
+</html>
