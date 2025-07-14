@@ -6,6 +6,8 @@
   <meta name="theme-color" content="#7e57c2">
   <meta name="description" content="Educação, inclusão e tecnologia para todos. Conheça a Escola Sementes da Transformação.">
   <meta name="keywords" content="educação social, escola solidária, alfabetização infantil, inclusão social, escola comunitária, Aparecida de Goiânia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <title>Escola Sementes da Transformação</title>
   <style>
     :root {
@@ -150,29 +152,40 @@ nav .nav-links a:hover {
     }
 
 
-   footer {
+  footer {
   background-color: var(--cor-destaque);
   color: white;
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 60px;
+  padding: 20px 15px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* Estilo para os links do footer */
+footer p {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 footer a {
   color: #fff;
-  text-decoration: underline;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-/* Efeito de elevação no hover */
 footer a:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ddd;
 }
-footer a {
-  cursor: pointer;
+
+footer i {
+  color: white;
+  font-size: 1rem;
 }
 
 
@@ -237,11 +250,16 @@ footer a {
   }
 
 }
+body {
+  padding-top: 120px; /* valor padrão para desktop */
+}
+
 @media (max-width: 768px) {
   body {
-    padding-top: 280px; /* valor ajustado para acomodar o menu fixo */
+    padding-top: 320px; /* aumenta o espaçamento para acomodar a nav empilhada */
   }
 }
+
 
   </style>
 </head>
@@ -352,10 +370,17 @@ footer a {
   </section>
 
 <footer id="contato">
-  <p><strong>Endereço:</strong> Rua Alameda Raio do Sol, Qd. 25, Chácara 05 – Setor Terra do Sol – Aparecida de Goiânia/GO</p>
-  <p><strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/5562992119064" target="_blank">(62) 99211-9064</a></p>
-  <p><strong>E-mail:</strong> <a href="mailto:motanice13@gmail.com">motanice13@gmail.com</a></p>
+  <p><i class="fas fa-map-marker-alt"></i> Rua Alameda Raio do Sol, Qd. 25, Chácara 05 – Setor Terra do Sol – Aparecida de Goiânia/GO</p>
+  <p>
+    <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/5562992119064" target="_blank">(62) 99211-9064</a>
+  </p>
+  <p>
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:motanice13@gmail.com">motanice13@gmail.com</a>
+  </p>
 </footer>
+
 
 
 </body>
