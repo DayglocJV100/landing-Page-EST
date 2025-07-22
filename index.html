@@ -274,6 +274,39 @@ blockquote {
   border-radius: 6px;
 }
 
+.zigzag {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.zigzag img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.zigzag .texto {
+  flex: 1 1 300px;
+}
+
+.zigzag.invertido {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .zigzag,
+  .zigzag.invertido {
+    flex-direction: column;
+  }
+
+  .zigzag img,
+  .zigzag .texto {
+    width: 100%;
+  }
+}
 
   </style>
 </head>
@@ -303,50 +336,76 @@ blockquote {
     </div>
   </header>
   
-  <section class="section" id="quem-somos">
-    <h2>Quem Somos</h2>
-    <p>A Associação Bem Viver Fazendo Transformação é uma organização sem fins lucrativos, nascida do coração da comunidade, idealizada por mães, pais, educadores e lideranças dos Setores Terra do Sol e Continental, em Aparecida de Goiânia/GO.</p>
-    <p>Nosso objetivo é romper com o ciclo de exclusão social através da educação, da solidariedade e da valorização do ser humano. Atuamos diretamente com crianças, adolescentes, jovens e adultos em situação de vulnerabilidade, promovendo acesso à alfabetização, alimentação, vestuário, cultura e cidadania.</p>
-  </section>
+ <section class="section" id="quem-somos">
+  <h2>Quem Somos</h2>
+  <div class="zigzag">
+    <img src="img/associacao.png" alt="Logo Associação Bem Viver F. T.">
+    <div class="texto">
+      <p>A Associação Bem Viver Fazendo Transformação é uma organização sem fins lucrativos, nascida do coração da comunidade, idealizada por mães, pais, educadores e lideranças dos Setores Terra do Sol e Continental, em Aparecida de Goiânia/GO.</p>
+      <p>Nosso objetivo é romper com o ciclo de exclusão social através da educação, da solidariedade e da valorização do ser humano. Atuamos diretamente com crianças, adolescentes, jovens e adultos em situação de vulnerabilidade, promovendo acesso à alfabetização, alimentação, vestuário, cultura e cidadania.</p>
+    </div>
+  </div>
+</section>
 
-  <section class="section" id="missao">
+
+<section class="section" id="missao">
   <h2>Nossa Missão</h2>
-  <img src="img/missão.png" alt="Imagem representando a missão da escola" class="secao-img">
-  <p>Oferecer, com amor e compromisso, educação de base, acolhimento social e estímulo à cidadania ativa, promovendo o desenvolvimento humano e comunitário.</p>
+  <div class="zigzag invertido">
+    <img src="img/missão.png" alt="Imagem representando a missão da escola">
+    <div class="texto">
+      <p>Oferecer, com amor e compromisso, educação de base, acolhimento social e estímulo à cidadania ativa, promovendo o desenvolvimento humano e comunitário.</p>
+    </div>
+  </div>
 </section>
 
 
-  <section class="section" id="visao">
+
+ <section class="section" id="visao">
   <h2>Nossa Visão</h2>
-  <img src="img/visao.png" alt="Imagem representando a visão da escola" class="secao-img">
-  <p>Ser referência em transformação social nas periferias urbanas, plantando sementes de dignidade, conhecimento e oportunidade.</p>
+  <div class="zigzag">
+    <img src="img/visao.png" alt="Imagem representando a visão da escola">
+    <div class="texto">
+      <p>Ser referência em transformação social nas periferias urbanas, plantando sementes de dignidade, conhecimento e oportunidade.</p>
+    </div>
+  </div>
 </section>
 
 
-  <section class="section" id="valores">
+
+ <section class="section" id="valores">
   <h2>Nossos Valores</h2>
-  <img src="img/valores.png" alt="Imagem representando os valores da escola" class="secao-img">
-  <ul>
-    <li>Respeito à dignidade humana</li>
-    <li>Amor ao próximo</li>
-    <li>Educação libertadora</li>
-    <li>Transparência nas ações</li>
-    <li>Participação comunitária</li>
-    <li>Solidariedade e inclusão</li>
-  </ul>
+  <div class="zigzag invertido">
+    <img src="img/valores.png" alt="Imagem representando os valores da escola">
+    <div class="texto">
+      <ul>
+        <li>Respeito à dignidade humana</li>
+        <li>Amor ao próximo</li>
+        <li>Educação libertadora</li>
+        <li>Transparência nas ações</li>
+        <li>Participação comunitária</li>
+        <li>Solidariedade e inclusão</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 
-  <section class="section" id="publico">
+
+<section class="section" id="publico">
   <h2>Público-Alvo</h2>
-  <img src="img/publico.png" alt="Imagem representando o público-alvo da escola" class="secao-img">
-  <p>Nosso trabalho atende a comunidade como um todo, com foco especial em:</p>
-  <ul>
-    <li><strong>Crianças:</strong> alfabetização, reforço escolar, alimentos, roupas e acolhimento.</li>
-    <li><strong>Jovens e adolescentes:</strong> educação, alimentação, socialização e cultura.</li>
-    <li><strong>Adultos:</strong> alfabetização (EJA), apoio à conclusão dos estudos, doações e integração cidadã.</li>
-  </ul>
+  <div class="zigzag">
+    <img src="img/publico.png" alt="Imagem representando o público-alvo da escola">
+    <div class="texto">
+      <p>Nosso trabalho atende a comunidade como um todo, com foco especial em:</p>
+      <ul>
+        <li><strong>Crianças:</strong> alfabetização, reforço escolar, alimentos, roupas e acolhimento.</li>
+        <li><strong>Jovens e adolescentes:</strong> educação, alimentação, socialização e cultura.</li>
+        <li><strong>Adultos:</strong> alfabetização (EJA), apoio à conclusão dos estudos, doações e integração cidadã.</li>
+      </ul>
+    </div>
+  </div>
 </section>
+
 
 
   <section class="section" id="projetos">
